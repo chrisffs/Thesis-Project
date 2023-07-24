@@ -1,3 +1,7 @@
+<?php
+include '../db/conn.php';
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,48 +9,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script defer src="../src/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+<div class="container">
+  <div class="w-50 mx-auto">
+    <h1>User</h1>
+    <!--                SESSION FOR INVALID INPUTS                -->
+    <?php
+      if(isset($_SESSION['invalid'])){
+          $invalid = $_SESSION['invalid'];
+          ?>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              <?= $invalid?>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <?php
+          unset($_SESSION['invalid']);
+      }
+    ?>
+
+    <!--                             FORM                       -->
+    <form class="row g-3 needs-validation" action="user_login.php" method="post" novalidate>
+      <div class="col-md-12">
+        <label for="username-val" class="form-label">Username</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-person"></i></span>
+          <input type="text" class="form-control" id="username-val" aria-describedby="inputGroupPrepend" name="username" required>
+          <div class="invalid-feedback">
+            Please enter a username.
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      <div class="col-md-12">
+        <label for="password-val" class="form-label">Password</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-lock"></i></span>
+          <input type="password" class="form-control" id="password-val" aria-describedby="inputGroupPrepend" name="password" required>
+          <div class="invalid-feedback">
+            Please enter a password.
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit" value="login" name="login">Submit form</button>
       </div>
-    </div>
+    </form>
   </div>
 </div>
-
-
+<script src="../src/js/script.js"></script>
 </body>
 </html>
