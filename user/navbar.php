@@ -49,7 +49,7 @@
                     </svg>    EXAM</a>
                 </li>
                 <li class="nav-item  px-4">
-                    <a class="nav-link" href="#"><svg width="25" height="25" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a class="nav-link" href="file_upload.php"><svg width="25" height="25" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0H42V42H0V0Z" fill="white" fill-opacity="0.01"/>
                     <path d="M21 38.5H7V3.5H35V21" stroke="#8F0F25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M31.062 38.5V27.125" stroke="#8F0F25" stroke-width="3.63346" stroke-linecap="round" stroke-linejoin="round"/>
