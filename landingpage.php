@@ -33,8 +33,8 @@
            
             </div>
             <div class="navbar-nav ms-auto login">
-                <a href="./user/user_login.php" class="nav-item nav-link  p-3 m-1">FACULTY</a>
-                <a href="./admin/admin_login.php" class="nav-item nav-link p-3 m-1">ADMIN</a>
+                <a href="./user/index.php" class="nav-item nav-link  p-3 m-1">FACULTY</a>
+                <a href="./admin/index.php" class="nav-item nav-link p-3 m-1">ADMIN</a>
           
             </div>
         </div>
