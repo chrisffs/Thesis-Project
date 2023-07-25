@@ -22,7 +22,7 @@ if(isset($_POST['login'])) {
             $_SESSION['type'] = $row['type'];
         }
 
-            header('location:success.php');
+            header('location:homepage.php');
             exit(0);
         } else {
             $_SESSION['invalid'] = "Wrong Username or Password!";
