@@ -3,7 +3,7 @@
     $servername = "localhost";		//example = localhost or 192.168.0.0
     $username = "root";		//example = root
     $password = "";	
-    $dbname = "tupvssdb";
+    $dbname = "thesis_db";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
