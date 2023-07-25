@@ -1,0 +1,98 @@
+span{
+    color: #A3041E;    
+}
+
+.login a{
+    transition: .3s;
+    border: 2px solid #282626;
+ 
+  
+    color: #282626;
+    
+}
+
+.tupv a{
+    color: #282626;
+    transition: .3s;
+}
+
+.tupv a:hover{
+    color: #c51936;
+}
+
+.login a:hover{
+    color: #c51936;
+    border: 2px solid #c51936;
+}
+
+.main{
+    position: relative;
+    background: url(../img/2.jpg)no-repeat;
+    height: 95vh;
+    width: 100%;
+    background-position: 50% 50%;
+ 
+}
+
+.main h1{
+    color: #ffff;
+    font-size: 5rem;
+    font-weight: 700;
+  
+}
+.main h5{
+    color: #ffff;
+    font-size: medium;
+    padding-top: 3px;
+}
+.main button{
+    background-color: #A3041E;
+    border: 0;
+    color: #A3041E;
+    width: 250px;
+
+}
+
+.wave{
+    position: absolute;
+
+}
+
+.footer{
+    background-color: #181515;
+
+}
+
+.footer h5{
+    color: #ffff;
+    font-size: 2rem;
+    width: 50px;
+
+}
+
+.footer h4{
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.footer h6{
+    color: #ffff;
+    font-size: .7rem;
+    width: 140px;
+}
+
+.footer p{
+    color: #ffff;
+    font-size: .5rem;
+    margin-top: 2px;
+}
+
+.footer button{
+    background-color: #A3041E;
+    border: 0;
+    color: #A3041E;
+    width: 100px;
+    height: 17px;
+}
+
