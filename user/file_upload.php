@@ -29,7 +29,7 @@ session_start();
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         <?php 
-            unset($_SESSION['message_account']);
+            unset($_SESSION['message']);
             endif;
         ?>
         <div class="row">
