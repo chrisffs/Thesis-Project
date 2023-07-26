@@ -144,6 +144,7 @@ session_start();
               . '<td data-title="File Name">' . $row["FILENAME"] . '</td>'
               . '<td data-title="Action">'
               . '<a href="../db/uploaded_files/' . $row["FILENAME"] . '" class="btn btn-success shadow-none m-1">View</a>'
+              . '<a href="../db/uploaded_files/' . $row["FILENAME"] . '" download="../db/uploaded_files/' . $row["FILENAME"] . '"class="btn btn-info shadow-none m-1">download</a>'
               . '</td>'
               . '</tr>';
           
