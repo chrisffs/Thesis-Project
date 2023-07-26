@@ -38,7 +38,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav me-auto mt-2 mt-lg-0 d-flex mx-auto">
                 <li class="nav-item px-4">
-                    <a class="nav-link" href="#" > <svg width="25" height="25" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a class="nav-link" href="" > <svg width="25" height="25" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M30.9997 27.9271V5.75185C30.9997 2.58395 29.4157 1 26.2478 1H19.912C16.7441 1 15.1602 2.58395 15.1602 5.75185V27.9271C15.1602 31.095 16.7441 32.679 19.912 32.679H26.2478C29.4157 32.679 30.9997 31.095 30.9997 27.9271Z" stroke="#8F0F25" stroke-width="1.85565" stroke-linecap="round"/>
                     <path d="M15.1602 7.33594H23.0799" stroke="#8F0F25" stroke-width="1.85565" stroke-linecap="round"/>
                     <path d="M15.1602 26.3418H21.496" stroke="#8F0F25" stroke-width="1.85565" stroke-linecap="round"/>

@@ -25,6 +25,7 @@ if(isset($_POST['submit_excel']))
         {
             if($count > 0)
             {
+                $today = date('y-m-d');
                 $department = mysqli_real_escape_string($conn, $row['0']);
                 $course = mysqli_real_escape_string($conn, $row['1']);
                 $year = mysqli_real_escape_string($conn, $row['2']);
@@ -38,7 +39,7 @@ if(isset($_POST['submit_excel']))
                 $d = mysqli_real_escape_string($conn, $row['10']);
                 $answer = mysqli_real_escape_string($conn, $row['11']);
 
-                $query = "INSERT INTO `questionbank_tbl` (`Department`, `Course`, `Year`, `Subject`, `Term`, `Semester`, `Question`, `A`, `B`, `C`, `D`, `Answer`) VALUES ('$department', '$course', '$year', '$subject', '$term', '$semester', '$question', '$a', '$b', '$c', '$d', '$answer')";
+                $query = "INSERT INTO `questionbankchecker_tbl` (`Department`, `Course`, `Year`, `Subject`, `Term`, `Semester`, `Question`, `A`, `B`, `C`, `D`, `Answer`, `Upload_Date`) VALUES ('$department', '$course', '$year', '$subject', '$term', '$semester', '$question', '$a', '$b', '$c', '$d', '$answer', '$today')";
                 
                 $query_run = mysqli_query($conn, $query);
                 $msg = true;
