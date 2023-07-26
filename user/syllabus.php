@@ -52,6 +52,20 @@ session_start();
                         <th>Action</th>
                 
                     </tr>
+
+                    <tr>
+
+                                <th>FILTER MODULE</th> 
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+
+                                </tr>
                     <tr>
 
                         <th col-index = 1>
@@ -119,21 +133,20 @@ session_start();
             while($row = $result-> fetch_assoc()){
             
             
-                echo'<tr>'
-                    .'<td data-title="Department">' . $row["DEPT"] . '</td>'
-                    .'<td data-title="Course">' . $row["COURSE"] . '</td>'
-                    .'<td data-title="Year">' . $row["YEAR"] . '</td>'
-                    .'<td data-title="Semester">' . $row["SEMESTER"] . '</td>'
-                    .'<td data-title="Term">' . $row["TERM"] . '</td>'
-                    .'<td data-title="Term">' . $row["SUBJECT_NAME"] . '</td>'
-                    .'<td data-title="Uploaded By">' . $row["UB"] . '</td>'
-                    .'<td data-title="File Name">' . $row["FILENAME"] . '</td>'
-                    .'<td data-title="Action">' 
-                    
-                    .' <a href = "#" type="submit" class="btn btn-success shadow-none m-1" >'
-                    
-                    .'</a>'
-                .'</tr>'; 
+              echo '<tr>'
+              . '<td data-title="Department">' . $row["DEPT"] . '</td>'
+              . '<td data-title="Course">' . $row["COURSE"] . '</td>'
+              . '<td data-title="Year">' . $row["YEAR"] . '</td>'
+              . '<td data-title="Semester">' . $row["SEMESTER"] . '</td>'
+              . '<td data-title="Term">' . $row["TERM"] . '</td>'
+              . '<td data-title="Term">' . $row["SUBJECT_NAME"] . '</td>'
+              . '<td data-title="Uploaded By">' . $row["UB"] . '</td>'
+              . '<td data-title="File Name">' . $row["FILENAME"] . '</td>'
+              . '<td data-title="Action">'
+              . '<a href="../db/uploaded_files/' . $row["FILENAME"] . '" class="btn btn-success shadow-none m-1">View</a>'
+              . '</td>'
+              . '</tr>';
+          
 
             }
             // edit.php?idno='.$row["IDno"].'
@@ -154,10 +167,7 @@ session_start();
   <!-- Bootstrap JavaScript Libraries -->
 
   <script>
-        window.onload = () => {
-            console.log(document.querySelector("#emp-table > tbody > tr:nth-child(1) > td:nth-child(2) ").innerHTML);
-        };
-
+    
         getUniqueValuesFromColumn()
         
     </script>
