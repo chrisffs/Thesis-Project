@@ -32,15 +32,12 @@ function getUniqueValuesFromColumn() {
         
     });
 
-    for(i in unique_col_values_dict) {
-        alert("Column index : " + i + " has Unique values : \n" + unique_col_values_dict[i]);
-    }
-
+ 
     updateSelectOptions(unique_col_values_dict)
 
 };
 
-// Add <option> tags to the desired columns based on the unique values
+
 
 function updateSelectOptions(unique_col_values_dict) {
     allFilters = document.querySelectorAll(".table-filter")
@@ -56,9 +53,6 @@ function updateSelectOptions(unique_col_values_dict) {
 };
 
 
-// Create filter_rows() function
-
-// filter_value_dict {2 : Value selected, 4:value, 5: value}
 
 function filter_rows() {
     allFilters = document.querySelectorAll(".table-filter")

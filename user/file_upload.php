@@ -1,6 +1,9 @@
 <?php
 include '../db/conn.php';
+
+
 session_start();
+include 'navbar.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +22,9 @@ session_start();
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
+
+
+<main>
 <div class="container">
     <form action="uploads.php" method="post" enctype="multipart/form-data">
         <?php 
@@ -111,6 +117,12 @@ session_start();
     
     </form>
 </div>
+
+</main>
+
+<footer>
+
+</footer>
 <script src="../src/js/dropdown.js"></script>
 <script src="../src/js/yearpicker.js"></script>
 </body>
