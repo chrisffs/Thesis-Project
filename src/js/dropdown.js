@@ -1,14 +1,14 @@
 $(document).ready(function (){
 let coursesList = [
-    {Department: 'College of Engineering', Course: 'Bachelor of Science in ELectronics Engineering'},
-    {Department: 'College of Engineering', Course: 'Bachelor of Science in Mechanical Engineering'},
-    {Department: 'College of Engineering', Course: 'Bachelor of Science in Electrical Engineering'},
-    {Department: 'College of Engineering', Course: 'Bachelor of Science in Computer Engineering'},
-    {Department: 'College of Automation and Control Engineering', Course: 'Bachelor of Science in Mechatronics Engineering'},
-    {Department: 'College of Automation and Control Engineering', Course: 'Bachelor of Science in Instrumentation and Control Engineering'},
-    {Department: 'College of Automation and Control Engineering', Course: 'Bachelor of Technology in Mechatronics Technology'},
-    {Department: 'College of Engineering Technology', Course: 'Bachelor of Science in Chemistry'},
-    {Department: 'College of Engineering Technology', Course: 'Bachelor of Science in Engineering Technology'},
+    {Department: 'College of Engineering (COE)', Course: 'Bachelor of Science in Electronics Engineering [BSECE]'},
+    {Department: 'College of Engineering (COE)', Course: 'Bachelor of Science in Mechanical Engineering [BSME]'},
+    {Department: 'College of Engineering (COE)', Course: 'Bachelor of Science in Electrical Engineering [BSEE]'},
+    {Department: 'College of Engineering (COE)', Course: 'Bachelor of Science in Computer Engineering [BSCpE]'},
+    {Department: 'College of Automation and Control Engineering (COAC)', Course: 'Bachelor of Science in Mechatronics Engineering [BSMXE]'},
+    {Department: 'College of Automation and Control Engineering (COAC)', Course: 'Bachelor of Science in Instrumentation and Control Engineering [BSICE]'},
+    {Department: 'College of Automation and Control Engineering (COAC)', Course: 'Bachelor of Technology in Mechatronics Technology [BETMXT]'}, 
+    {Department: 'College of Engineering Technology (COET)', Course: 'Bachelor of Science in Chemistry [BSChem]'},
+    {Department: 'College of Engineering Technology (COET)', Course: 'Bachelor of Science in Engineering Technology [BET]'},
 ]
 
 $("#department").change(function () {

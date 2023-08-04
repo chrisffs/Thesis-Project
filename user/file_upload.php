@@ -43,9 +43,9 @@ include 'navbar.php';
                 <label for="department">Department</label>
                 <select class="form-select form-select-md" aria-label=".form-select-md example" name="department" id="department">
                     <option hidden selected>Select Department</option>
-                    <option value="College of Engineering">College of Engineering</option>
-                    <option value="College of Automation and Control Engineering">College of Automation and Control Engineering</option>
-                    <option value="College of Engineering Technology">College of Engineering Technology</option>
+                    <option value="College of Engineering (COE)">College of Engineering</option>
+                    <option value="College of Automation and Control Engineering (COAC)">College of Automation and Control Engineering</option>
+                    <option value="College of Engineering Technology (COET)">College of Engineering Technology</option>
                 </select>
             </div>
             <div class="col">

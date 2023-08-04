@@ -59,8 +59,8 @@
                     </svg> ADD MODULE</a>
                 </li>
 
-                <li class="nav-item  px-4">
-                    <a class="nav-link" href="syllabus.php"><svg width="25" height="25" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <li class="nav-item px-4">
+                    <a class="nav-link" href="syllabus/"><svg width="25" height="25" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0H38V38H0V0Z" fill="white" fill-opacity="0.01"/>
                     <path d="M3.1665 4.75H31.6665C31.6665 4.75 34.8332 6.33333 34.8332 10.2917C34.8332 14.25 31.6665 15.8333 31.6665 15.8333H3.1665C3.1665 15.8333 6.33317 14.25 6.33317 10.2917C6.33317 6.33333 3.1665 4.75 3.1665 4.75Z" fill="#FCFCFC" stroke="#8F0F25" stroke-width="1.67021" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M34.8332 22.166H6.33317C6.33317 22.166 3.1665 23.7493 3.1665 27.7077C3.1665 31.666 6.33317 33.2493 6.33317 33.2493H34.8332C34.8332 33.2493 31.6665 31.666 31.6665 27.7077C31.6665 23.7493 34.8332 22.166 34.8332 22.166Z" fill="#FCFCFC" stroke="#8F0F25" stroke-width="1.67021" stroke-linecap="round" stroke-linejoin="round"/>
