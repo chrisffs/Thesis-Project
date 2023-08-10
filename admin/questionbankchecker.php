@@ -1,3 +1,8 @@
+<?php
+include '../db/conn.php';
+session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -8,9 +13,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="../src/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../src/css/all.min.css">
+  <link rel="stylesheet" href="../src/css/fontawesome.css">
+  <script defer src="../src/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -53,26 +59,10 @@
             <tbody>
 
             <?php
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $database = "thesis_db";
-            $connection = new mysqli($servername, $username, $password, $database);
-
-
             $sql = "SELECT * FROM questionbankchecker_tbl";
-            $result = $connection->query($sql);
+            $result = $conn->query($sql);
             
-          if($connection->connect_error){
-          die("Connection failed: " . $connection->connect_error);
-            }
-
-            if(!$result){
-                die("Invalid Property " . $connection->connect_error);
-            }
-
             while($row = $result-> fetch_assoc()){
-            
             
                 echo '<tr>'
                 . '<td data-title="Department">' . $row["Department"] . '</td>'
@@ -116,13 +106,11 @@
     <!-- place footer here -->
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+  </script> -->
+  <script src="../src/js/popper.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
 </body>
 
 </html>
