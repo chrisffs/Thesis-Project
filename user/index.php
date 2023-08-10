@@ -9,7 +9,8 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../src/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../src/css/all.min.css">
+    <link rel="stylesheet" href="../src/css/fontawesome.css">
     <script defer src="../src/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -35,7 +36,7 @@ session_start();
       <div class="col-md-12">
         <label for="username-val" class="form-label">Username</label>
         <div class="input-group has-validation">
-          <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-person"></i></span>
+          <span class="input-group-text" id="inputGroupPrepend"><i class="fa-solid fa-user"></i></span>
           <input type="text" class="form-control" id="username-val" aria-describedby="inputGroupPrepend" name="username" required>
           <div class="invalid-feedback">
             Please enter a username.
@@ -45,7 +46,7 @@ session_start();
       <div class="col-md-12">
         <label for="password-val" class="form-label">Password</label>
         <div class="input-group has-validation">
-          <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-lock"></i></span>
+          <span class="input-group-text" id="inputGroupPrepend"><i class="fa-solid fa-lock"></i></span>
           <input type="password" class="form-control" id="password-val" aria-describedby="inputGroupPrepend" name="password" required>
           <div class="invalid-feedback">
             Please enter a password.

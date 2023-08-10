@@ -1,0 +1,121 @@
+@media print {
+  #print-btn {
+    display: none;
+  }
+  #testpaper-show {
+    display: none;
+  }
+  #testpaper-div, .pagebreak, #answersheet-div {
+    display: block !important;
+  }
+}
+
+@media print {
+  .pagebreak {
+      clear: both;
+      page-break-after: always;
+  }
+}
+/* div.oneTotwenty > div.row > div.choices {
+  border: 1px solid red;
+} */
+
+.container-custom {
+  margin: 0 auto;
+  width: 21cm;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas: 'oneTotwenty twentyoneToforty fortyoneTofifty';
+  grid-gap: 20px;
+  /* padding: 10px; */
+}
+
+.oneTotwenty {
+  grid-area: oneTotwenty;
+
+  
+}
+.twentyoneToforty {
+  grid-area: twentyoneToforty;
+
+}
+.fortyoneTofifty {
+  grid-area: fortyoneTofifty;
+}
+.twentyoneToforty > .row > .choices2 {
+  width: 75%;
+}
+.fortyoneTofifty > .row > .choices2 {
+  width: 70%;
+}
+
+
+
+.text-md {
+    font-size: 11px;
+}
+.text-no {
+  font-size: 12px;
+}
+p {
+    margin: 0;
+}
+.answers {
+    border: 1px solid black;
+}
+.circles {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.choices {
+  
+}
+
+/* 
+body {
+  background: rgb(204,204,204); 
+}
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  padding: 2.54cm;
+
+}
+page[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm; 
+}
+page[size="A4"][layout="landscape"] {
+  width: 29.7cm;
+  height: 21cm;  
+}
+page[size="A3"] {
+  width: 29.7cm;
+  height: 42cm;
+}
+page[size="A3"][layout="landscape"] {
+  width: 42cm;
+  height: 29.7cm;  
+}
+page[size="A5"] {
+  width: 14.8cm;
+  height: 21cm;
+}
+page[size="A5"][layout="landscape"] {
+  width: 21cm;
+  height: 14.8cm;  
+}
+@media print {
+  body, page {
+    background: white;
+    margin: 0;
+    box-shadow: 0;
+  }
+} */
+
